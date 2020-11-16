@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+</head>
+<body>
+	<div align="center">
+	<br><br>
+	<h1>
+	长按二维码加群报名	
+	</h1>
+	<br><br><br>
+	<!--<img src="1.jpg" height="320" width="243">-->
+	<img src="a.jpg" onLoad="jj()" id="wechat" height="240" width="240">
+               <script>
+                        var aaa=0;
+                        console.log("first aaa is "+aaa);
+                        function jj(){
+                        console.log("second aaa is "+aaa);
+                        if(aaa!=1){
+                                let random = Math.floor(Math.random() * 4); 
+                                console.log(random);
+                                var path = " ";
+                                if(random == 0) path = "a.jpg";
+                                else if(random == 1) path = "b.jpg";
+                                else if(random == 2) path = "c.jpg";
+                                else path = "d.jpg";
+                                let x = document.getElementById("wechat");
+                                x.src = path;
+                                //path = "a.jpg";
+                                aaa=1;
+                        }
+                        }
+                </script>
+
+	<div>
+
+</body>
+</html>
+
+
